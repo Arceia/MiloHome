@@ -15,7 +15,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (url.pathname === "/api && request.method === "POST") {
+if (url.pathname === "/api/chat" && request.method === "POST") {
       try {
         const { message } = await request.json();
 
